@@ -1,7 +1,7 @@
 /* Step 0.  As a comment, include your filename (CS60_8_LastName_FirstName.SQL) 
 and the date. -CS60_8_Shatz_Patricia.SQL 5.2.17 */
 
-/* Step 1.  Using Oracle’s SQL Developer interface (Project 7 describes its use)
+/* Step 1.  Using Oracleâ€™s SQL Developer interface (Project 7 describes its use)
 , create the tables shown on the next page with their constraints.  Preface each 
 table name with your initials LFM_ (Last First Middle and underscore).  
 An example of a CREATE TABLE statement with both a primary key and a foreign key 
@@ -10,13 +10,8 @@ is in the Declaring a foreign key section of Chapter 07.
 Create the tables in an order that satisfies referential integrity.  
 In the name for your primary key constraint, also include your initials because 
 that name will be used for an auto-generated index, and the names for indexes 
-and all objects must be unique in the database.-- CS60_8_Shatz_Patricia.SQL 
-5.2.17 */
-
-/*I realize that you only would like us to only drop the tables at the very end
-of our commands, however, I have left these DROP TABLE commands here in case you 
-get an error saying that these tables already exist. - CS60_8_Shatz_Patricia.SQL 
-5.10.17 */
+and all objects must be unique in the database.--
+*/
 
 DROP TABLE SAP_Enroll;
 DROP TABLE SAP_Student;
@@ -46,7 +41,7 @@ CREATE TABLE SAP_Enroll
     
 --/* Step 2.  Insert the rows of raw data into each table.  INSERT is described 
 --in Chapter 08.  Insert them in an order that satisfies referential integrity.  
---You’ll insert rows into your LFM_Enroll table last. */
+--Youâ€™ll insert rows into your LFM_Enroll table last. */
 INSERT INTO SAP_Student
   (Student_ID, LastName, FirstName)
   values
@@ -162,7 +157,7 @@ UPDATE SAP_Enroll
 
 /* Step 4.  Delete one row from each table.  DELETE is described in Chapter 08.  
 The rows you delete cannot violate referential integrity (i.e., the deleted row 
-cannot have a primary key that’s being referenced by some foreign key). */
+cannot have a primary key thatâ€™s being referenced by some foreign key). */
 
 DELETE FROM SAP_Student
   WHERE Student_ID = 1300000;
